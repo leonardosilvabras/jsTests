@@ -1,4 +1,4 @@
-let sum = (...args) => {
+const sum = (...args) => {
   let result = 0;
   for (const num of args) {
     result += num;
@@ -16,7 +16,7 @@ class Students {
   }
 }
 
-let students = [
+const students = [
   (F2401 = new Students(
     "Leonardo Henrique Gabriel da Silva",
     20,
@@ -27,14 +27,10 @@ let students = [
   (F0512 = new Students("Beatriz Moniele da Silva", 25, "F", 2, false)),
 ];
 
-let mediaAlunos = () => {
-  let totalIdades = 0;
-
-  for (i = 0; i < students.length; i++) {
-    totalIdades += students[i].idade;
+const mediaAlunos = () => {
+  for (i = 0, mediaIdade = 0; i < students.length; i++) {
+    mediaIdade += students[i].idade / students.length;
   }
-  let mediaIdade = totalIdades / students.length;
-
   return mediaIdade;
 };
 
