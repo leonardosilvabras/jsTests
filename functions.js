@@ -47,7 +47,7 @@ console.log(mediaAlunos());
 let alunoNotas = [];
 mediaNotas = 0;
 alunoNotas.length = 3;
-mediaEscolar = 5;
+mediaEscolar = 6;
 
 for (let aluno = 0; aluno < students.length; aluno++) {
   for (let notas = 1, i = 0; notas < alunoNotas.length + 1; notas++, i++) {
@@ -72,8 +72,7 @@ for (let aluno = 0; aluno < students.length; aluno++) {
       students[aluno].media = mediaNotas;
       mediaNotas = 0;
 
-      if (students[aluno.media] < 5) {
-        alert("Em recuperação");
+      if (students[aluno].media < mediaEscolar) {
         students[aluno].status = "recuperação";
       } else {
         students[aluno].status = "aprovado";
