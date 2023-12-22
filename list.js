@@ -1,12 +1,13 @@
-let list = [];
-list.length = 10;
+let shoppingList = [];
+shoppingCartCapacity = 10;
 
-for (items = 0; items < list.length; items++) {
-  list[items] = prompt(
+for (let items = 0; items < shoppingCartCapacity; items++) {
+    shoppingList[items] = prompt(
     "Digite o nome do item que vai ser colocado na sua compra:"
   );
 
-  if (items === (list.length-1)) {
-    console.log(list.join(","));
+  if (items === (shoppingCartCapacity-1)) {
+    alert(`Seu carrinho atingiu o limite de items.\n
+    Os items contidos no seu carrinho sao: ${shoppingList.join(",")}`);
   }
 }
