@@ -6,7 +6,7 @@ for (items = 0; items < list.length; items++) {
     "Digite o nome do item que vai ser colocado na sua compra:"
   );
 
-  if (items === 9) {
+  if (items === (list.length-1)) {
     console.log(list.join(","));
   }
 }
