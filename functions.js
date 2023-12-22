@@ -35,3 +35,12 @@ const mediaAlunos = () => {
 };
 
 console.log(mediaAlunos());
+
+let alunoNotas = [];
+mediaNotas = 0;
+alunoNotas.length = 3;
+for (let notas = 1; notas < alunoNotas.length + 1; notas++) {
+  alunoNotas[i] = Number(prompt(`Digite a nota da prova ${notas}:`));
+  mediaNotas += alunoNotas[i] / alunoNotas.length;
+}
+alert(mediaNotas);
