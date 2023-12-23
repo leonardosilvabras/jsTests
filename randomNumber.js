@@ -4,6 +4,7 @@ let random = Math.floor(Math.random() * 5),
 
 while (kick != random) {
   kick = Number(prompt("Adivinhe o numero sorteado no intervalo de 0 a 4:"));
+  if (kick != random) alert("Número incorreto, tente novamente");
   kicks++;
 }
 
