@@ -7,4 +7,4 @@ while (Number(kick) != random) {
   kicks++;
 }
 
-alert(`Número correto.\nVoce realizou ${kicks} tentativas.`);
+alert(`Número correto.\nVoce realizou ${kicks} tentativa(s).`);
