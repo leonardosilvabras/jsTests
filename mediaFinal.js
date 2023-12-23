@@ -25,13 +25,19 @@ class Student {
 }
 
 let students = [];
-Leonardo = new Student("Leonardo Henrique Gabriel da Silva", 20, "M", 2, true);
-Beatriz = new Student("Beatriz Moniele da Silva", 25, "F", 3, false);
-alunoNotas = [];
-mediaNotas = 0;
-alunoNotas.length = 3;
-mediaEscolar = 6;
-toFixedNumbers = 2;
+(Leonardo = new Student(
+  "Leonardo Henrique Gabriel da Silva",
+  20,
+  "M",
+  2,
+  true
+)),
+  (Beatriz = new Student("Beatriz Moniele da Silva", 25, "F", 3, false)),
+  (alunoNotas = []),
+  (mediaNotas = 0),
+  (alunoNotas.length = 3),
+  (mediaEscolar = 6),
+  (toFixedNumbers = 2);
 
 students.push(Leonardo, Beatriz);
 
@@ -62,8 +68,8 @@ for (let aluno = 0; aluno < students.length; aluno++) {
       mediaNotas += alunoNotas[i] / alunoNotas.length;
 
       if (i === 2) {
-        students[aluno].media = mediaNotas.toFixed(toFixedNumbers);
-        mediaNotas = 0;
+        (students[aluno].media = mediaNotas.toFixed(toFixedNumbers)),
+          (mediaNotas = 0);
 
         if (students[aluno].media < mediaEscolar) {
           students[aluno].status = "Recuperação";
@@ -87,7 +93,10 @@ for (let aluno = 0; aluno < students.length; aluno++) {
           console.log(`Dados finais do aluno ${students[aluno].nome}:\n
           ${formResult}
           `);
-          console.log("%cA Escola Técnica Estadual do Estado de São Paulo deseja ao aluno boas festas!", "background: #000; color: #FF0000");
+          console.log(
+            "%cA Escola Técnica Estadual do Estado de São Paulo deseja ao aluno boas festas!",
+            "background: #000; color: #FF0000"
+          );
         } else {
           console.log(`Dados finais da aluna ${students[aluno].nome}:\n
           ${formResult}
