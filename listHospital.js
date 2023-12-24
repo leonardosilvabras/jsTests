@@ -9,4 +9,12 @@ class Paciente {
 
 let pacientes = [] 
 pacientes.push((leonardo = new Paciente("Leonardo", 20, 75, 170)))
-console.log(pacientes)
+
+for (i=0; i<pacientes.length; i++) {
+  alert(`
+  Ficha do paciente ${pacientes[i].nome}:
+    Idade: ${pacientes[i].idade}
+    Peso: ${pacientes[i].peso}
+    Altura: ${pacientes[i].altura}
+  `)
+}
